@@ -1,0 +1,118 @@
+body {
+    background-color: #fa4a4a;
+    border-style: groove;
+    border-width: 10px;
+    border-color: aqua;
+    border-radius: 20px;
+    touch-action: pan-y;    
+    animation-name: screenshake;
+    animation-delay: 8.5s;
+    animation-duration: 2s;
+}
+#menu_button{
+    cursor: pointer;
+    font-size: 50px; background-color: rgb(0, 240, 255); border-radius: 10px; position:absolute; right: 10px;
+    transition: background-color 0.25s;
+    transform: rotateZ(10deg);
+    box-shadow: 5px 5px 5px blue;
+    animation-name: slideleftmenuB;
+    animation-duration: 2s;
+}
+#menu_button:hover{
+    background-color: rgb(0, 255, 255);
+}
+#world_weird_question_text{
+    color: #7CD651;
+    border-bottom: 5px dashed rgb(194, 12, 194);
+    text-shadow: 0px 4px 5px; 
+    animation-name: slidedowntext;
+    animation-duration: 5s;
+}
+#rightarrow{
+    cursor: pointer;
+    transition: background-color 0.25s;
+    transform: rotateZ(10deg);
+    font-size: 50px;
+    background-color: rgb(255, 200, 0);
+    border-radius: 10PX;    
+    float: right;
+    animation-name: sliderightarrow;
+    animation-duration: 7s;
+    box-shadow:5px 5px 5px blue;
+    
+    
+    
+}
+#rightarrow:hover{
+    background-color: gold;
+}
+#leftarrow{
+    cursor: pointer;
+    transform: rotateZ(-10deg);
+    transition: background-color 0.25s;
+    font-size: 50px; 
+    background-color: rgb(255, 200, 0); 
+    border-radius: 10PX; 
+    float: left;
+    animation-name: slideleftarrow;
+    animation-duration: 7s;
+    box-shadow:-5px 5px 5px blue;
+
+}
+#leftarrow:hover{
+    background-color: gold;
+}
+
+#logo{
+    border-style: dashed;
+    border-width: 5px;
+    border-color: rgb(0, 255, 187);
+    border-bottom: 5px dashed rgb(194, 12, 194);
+    box-shadow: 10px 10px 5px;
+    animation-name: slideleft;
+    animation-duration: 2s;
+    
+}
+#box{
+    height: 100px;
+    width: 60px;
+    background-color: blue;
+}
+
+.imagestuff img{
+    height: 95%; 
+    width: 95%; 
+    background-color: rgb(255, 255, 255); 
+    border-radius: 500px;
+    border-style: outset;
+    border-width: 5px;
+    border-color: rgb(0, 94, 255);
+    box-shadow:0px -20px 100px blue;
+    animation-name: bigbangboom;
+    animation-duration: 7.5s;
+
+}
+
+
+
+@keyframes slideleft{
+    from{transform: translateX(350%);}
+}
+@keyframes slideleftmenuB{
+    from{transform: translateX(-1000%);}
+}   
+@keyframes slidedowntext{
+    from{transform: translatey(-2000%);}
+}   
+@keyframes sliderightarrow{
+    from{transform: translatex(-2400%);}
+}   
+@keyframes slideleftarrow{
+    from{transform: translatex(2400%);}
+}   
+@keyframes bigbangboom{
+    from{transform: translatey(-8000%);}    
+}
+@keyframes screenshake{
+    100%{transform: rotateZ(360deg);}    
+}
